@@ -49,28 +49,28 @@
         
         <h2>Code:</h2>
         <pre>
-          import numpy as np
-          from bokeh.io import output_file
-          from bokeh.io import show
-          from bokeh.layouts import row, column
-          from bokeh.plotting import figure
-          # Create a new plot object.
-          fig = figure(width=500, height=500, title='Different Types of Plots')
-          # Add data to the plot.
-          x = np.linspace(0, 10, 100)
-          y = np.sin(x)
-          # Add a line glyph to the plot.
-          fig.line(x, y, line_width=2, legend_label='Line Plot')
-          # Add a bar chart to the plot.
-          fig.vbar(x=x, top=y, legend_label='Bar Chart', width=0.5, bottom=0)
-          # Add a scatter plot to the plot.
-          fig.circle(x, y, size=10, color='red', legend_label='Scatter Plot')
-          # Customize the plot appearance.
-          fig.xaxis.axis_label = 'X Axis'
-          fig.yaxis.axis_label = 'Y Axis'
-          fig.legend.location = 'top_right'
-          # Show the plot.
-          show(fig)
+              import numpy as np
+              from bokeh.io import output_file
+              from bokeh.io import show
+              from bokeh.layouts import row, column
+              from bokeh.plotting import figure
+              # Create a new plot object.
+              fig = figure(width=500, height=500, title='Different Types of Plots')
+              # Add data to the plot.
+              x = np.linspace(0, 10, 100)
+              y = np.sin(x)
+              # Add a line glyph to the plot.
+              fig.line(x, y, line_width=2, legend_label='Line Plot')
+              # Add a bar chart to the plot.
+              fig.vbar(x=x, top=y, legend_label='Bar Chart', width=0.5, bottom=0)
+              # Add a scatter plot to the plot.
+              fig.circle(x, y, size=10, color='red', legend_label='Scatter Plot')
+              # Customize the plot appearance.
+              fig.xaxis.axis_label = 'X Axis'
+              fig.yaxis.axis_label = 'Y Axis'
+              fig.legend.location = 'top_right'
+              # Show the plot.
+              show(fig)
           </pre>
         
         <button onclick="window.location.href='index.html'">⬅ Back to Home</button>
