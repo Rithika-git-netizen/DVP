@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 3a -LAB GENIE</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f4f4f4, #ddd);
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        pre {
+            background: #222;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: left;
+            overflow-x: auto;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            background: #007bff;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Program 3a: Write a Python program that accepts a sentence and find the number of words, digits, uppercas
+ e letters and lowercase letters</h1>
+        <p><strong>Description:</strong> This program demonstrates a basic implementation of an array traversal.</p>
+        
+        <h2>Code:</h2>
+        <pre>
+           
+str=input ("Enter the Sentence ") 
+w, d, l, u=0,0,0,0 
+words=str.split () 
+w=len (words) 
+for i in str: 
+    if i.isdigit(): 
+        d=d+1 
+    elif i.isupper(): 
+        u=u+1 
+    elif i.islower(): 
+        l=l+1 
+print ("Number of words", w) 
+print ("Number of Digits", d) 
+print ("Number of Uppercase Letters", u) 
+print ("Number of Lowercase Letters", l) 
+           </pre>
+        
+        <h2>Output:</h2>
+        <pre>
+           
+OUTPUT: - 
+ 
+Enter the Sentence k S School of Engg 123 
+Number of words 6 
+Number of Digits 3 
+Number of Uppercase Letters 3 
+Number of Lowercase Letters 11
+          </pre>
+        
+        <button onclick="window.location.href='index.html'">⬅ Back to Home</button>
+    </div>
+</body>
+</html>
