@@ -3,10 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LABGENIE- Your DVP Lab Guide</title>
+    <title>LABGENIE - Your DVP Lab Guide</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@400;600&display=swap">
-
+    <style>
+        .program-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            text-align: center;
+        }
+        .program-card {
+            background: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        .program-card:hover {
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <body>
     <header class="sticky-header">
@@ -30,19 +49,34 @@
     <section id="features" class="fade-in">
         <h2>Key Features</h2>
         <div class="feature-cards">
-            <div class="card">📄Downloadable PDF</div>
-            <div class="card">💻Program Code</div>
-            <div class="card">❓Viva Questions & Solutions</div>
+            <div class="card">📄 Downloadable PDF</div>
+            <div class="card">💻 <a href="#programs">Program Code</a></div>
+            <div class="card">❓ Viva Questions & Solutions</div>
         </div>
     </section>
 
     <section id="programs">
         <h2>Featured Programs</h2>
-        <ul>
-            <li>Convolution Program</li>
-            <li>DFT/IDFT Implementation</li>
-            <li>FIR & IIR Filter Design</li>
-        </ul>
+        <div class="program-grid">
+            <a href="program1a.html" class="program-card">Program 1A</a>
+            <a href="program1b.html" class="program-card">Program 1B</a>
+            <a href="program2a.html" class="program-card">Program 2A</a>
+            <a href="program2b.html" class="program-card">Program 2B</a>
+            <a href="program3a.html" class="program-card">Program 3A</a>
+            <a href="program3b.html" class="program-card">Program 3B</a>
+            <a href="program4a.html" class="program-card">Program 4A</a>
+            <a href="program4b.html" class="program-card">Program 4B</a>
+            <a href="program5a.html" class="program-card">Program 5A</a>
+            <a href="program5b.html" class="program-card">Program 5B</a>
+            <a href="program6a.html" class="program-card">Program 6A</a>
+            <a href="program6b.html" class="program-card">Program 6B</a>
+            <a href="program7.html" class="program-card">Program 7</a>
+            <a href="program8a.html" class="program-card">Program 8A</a>
+            <a href="program8b.html" class="program-card">Program 8B</a>
+            <a href="program9.html" class="program-card">Program 9</a>
+            <a href="program10a.html" class="program-card">Program 10A</a>
+            <a href="program10b.html" class="program-card">Program 10B</a>
+        </div>
     </section>
 
     <section id="contact">
@@ -53,21 +87,5 @@
     <footer>
         <p>&copy; 2025 LABGENIE. All rights reserved.</p>
     </footer>
-
-    <script>
-        document.querySelector('.cta-btn').addEventListener('click', () => {
-            alert('Welcome to LABGENIE! Start exploring now.');
-        });
-
-        // Sticky Header Animation
-        window.addEventListener('scroll', function () {
-            const header = document.querySelector('.sticky-header');
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-    </script>
 </body>
 </html>
