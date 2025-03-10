@@ -31,9 +31,10 @@ body {
     padding: 0;
     box-sizing: border-box;
     background: linear-gradient(135deg, #9d2585, #922db7);
+                url('backgrounds.jpg') no-repeat center center/cover;
     color: #fff;
     font-family: Arial, sans-serif;
-    background: url('backgrounds.jpg') no-repeat center center/cover;
+ 
     height: 100vh; /* Full viewport height */
     color: #ffffff; /* Ensures text remains readable */
     overflow-x: hidden; /* Prevents horizontal scroll */
