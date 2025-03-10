@@ -47,29 +47,30 @@
         <h1>Program 6a Write a Python program to illustrate Linear Plotting using Matplotlib. </h1>
         <p><strong>Description:</strong> This program demonstrates a basic implementation of an array traversal.</p>
         
-        <h2>Code: 
-import matplotlib.pyplot as plt 
-import pandas as pd 
-import numpy as np 
- 
-X=np.linspace(1,20,10) 
-print(X) 
-Y1=X 
-Y2=np.square(X) 
-print(Y2) 
-Y3=np.sqrt(X) 
- 
-# Line plot 
-plt.plot(X,Y1,'r',X,Y2,'b',X,Y3,'g') 
-plt.legend(['X','X-square','Square-root']) 
- 
-# Add title to the plot 
-plt.title('line plot') 
-plt.grid() 
- 
-# Display the plot 
-plt.show()</h2>
+        <h2>Code:</h2> 
         <pre>
+            import matplotlib.pyplot as plt 
+            import pandas as pd 
+            import numpy as np 
+             
+            X=np.linspace(1,20,10) 
+            print(X) 
+            Y1=X 
+            Y2=np.square(X) 
+            print(Y2) 
+            Y3=np.sqrt(X) 
+             
+            # Line plot 
+            plt.plot(X,Y1,'r',X,Y2,'b',X,Y3,'g') 
+            plt.legend(['X','X-square','Square-root']) 
+             
+            # Add title to the plot 
+            plt.title('line plot') 
+            plt.grid() 
+             
+            # Display the plot 
+            plt.show()
+       
 </pre>
         
         <button onclick="window.location.href='index.html'">⬅ Back to Home</button>
