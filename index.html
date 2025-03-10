@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LABGENIE- Your DVP Lab Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@400;600&display=swap">
+
+</head>
+<body>
+    <header class="sticky-header">
+        <h1>LABGENIE</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Your Personal Guide to Digital Signal Processing!</h2>
+        <p>Unlock powerful resources, programs, and expert guidance to excel in your DVP Lab.</p>
+        <a href="#features" class="cta-btn">Explore Now</a>
+    </section>
+
+    <section id="features" class="fade-in">
+        <h2>Key Features</h2>
+        <div class="feature-cards">
+            <div class="card">📄Downloadable PDF</div>
+            <div class="card">💻Program Code</div>
+            <div class="card">❓Viva Questions & Solutions</div>
+        </div>
+    </section>
+
+    <section id="programs">
+        <h2>Featured Programs</h2>
+        <ul>
+            <li>Convolution Program</li>
+            <li>DFT/IDFT Implementation</li>
+            <li>FIR & IIR Filter Design</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to us at <a href="mailto:support@labgenie.com">support@labgenie.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 LABGENIE. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelector('.cta-btn').addEventListener('click', () => {
+            alert('Welcome to LABGENIE! Start exploring now.');
+        });
+
+        // Sticky Header Animation
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('.sticky-header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
