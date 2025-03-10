@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 5a -LAB GENIE</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f4f4f4, #ddd);
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        pre {
+            background: #222;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: left;
+            overflow-x: auto;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            background: #007bff;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Program 5a  Write a Python program to Demonstrate how to Draw a Histogram Plot using Matplotlib.</h1>
+        <p><strong>Description:</strong> This program demonstrates a basic implementation of an array traversal.</p>
+        
+        <h2>Code: 
+import matplotlib.pyplot as plt 
+import pandas as pd 
+import numpy as np 
+import random 
+ 
+#Generate random students marks 
+np.random.seed(42) 
+student_marks=np.random.normal(loc=70,scale=15,size=100) 
+ 
+#Create Histogram 
+plt.hist(student_marks,bins=20,color='skyblue',edgecolor='black') 
+ 
+#Add labels and title 
+plt.xlabel('Student Marks') 
+plt.ylabel('Frequency') 
+plt.title('Distribution of Student Marks') 
+ 
+#Display the plot 
+plt.show() </h2>
+        <pre>
+ </pre>
+        
+        <button onclick="window.location.href='index.html'">⬅ Back to Home</button>
+    </div>
+</body>
+</html>
+
