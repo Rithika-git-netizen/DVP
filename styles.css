@@ -1,1 +1,162 @@
+h1, h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;  /* Bold effect */
+    text-transform: uppercase; /* Techy look */
+    color: #ffffff; /* White text for better contrast */
+}
+h1 {
+    background: linear-gradient(90deg, #fefbff, hsl(316, 83%, 39%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4rem;
+    color: #ff00ff;
+    text-shadow: 0 0 15px #00c6ff, 0 0 30px #0072ff;
+    animation: glow 2s infinite alternate;
+}
 
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #00c6ff, 0 0 20px #0072ff;
+    }
+    to {
+        text-shadow: 0 0 20px #00ffcc, 0 0 40px #00c6ff;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #9d2585, #922db7);
+                url('backgrounds.jpg') no-repeat center center/cover;
+    color: #fff;
+    font-family: Arial, sans-serif;
+ 
+    height: 100vh; /* Full viewport height */
+    color: #ffffff; /* Ensures text remains readable */
+    overflow-x: hidden; /* Prevents horizontal scroll */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400; 
+    line-height: 1.6; /* Improves readability */
+    color: #e0e0e0; /* Soft text for a smoother feel */
+}
+
+/* Code Snippets (Courier New) */
+code, pre {
+    font-family: 'Courier New', monospace;
+    background-color: #10172a;  /* Dark code block background */
+    color: #00ffcc;             /* Bright code text */
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+    
+header {
+    background: #2a0d1ea6;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(72, 43, 43, 0.938);
+}
+
+.sticky-header.scrolled {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #682186;
+    transition: background 0.3s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ea47f3;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffffffbb;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: #190819;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.cta-btn {
+    font-family: 'Rajdhani', sans-serif;
+    background-color: #d909f4;
+    color: #ffffff;
+    padding: 12px 24px;
+    border: 2px solid #b4f306;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    
+}
+
+.cta-btn:hover {
+    background-color: #00ffcc;
+    color: #10172a;
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0 0 15px #00ffcc;
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.feature-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.card {
+    background: #110515;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: #e029f5;
+}
+
+footer {
+    background: #4a1a48;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
