@@ -47,6 +47,11 @@ header {
     padding: 15px 0;
     text-align: center;
     box-shadow: 0 4px 10px rgba(72, 43, 43, 0.938);
+    header .header-content img {
+    width: 80px; /* Adjust this value as needed */
+    height: auto;
+}
+
 }
 
 .sticky-header.scrolled {
