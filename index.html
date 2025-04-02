@@ -12,13 +12,95 @@
             padding: 0;
             box-sizing: border-box;
             background: url('backgrounds.jpg') no-repeat center center/cover;
-            height: 100vh;
             color: #ffffff;
             font-family: 'Poppins', sans-serif;
-            font-weight: 400; 
-            line-height: 1.6;
             overflow-x: hidden;
         }
+        
+        /* Navigation Bar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 50, 0.9);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .navbar h1 {
+            font-family: 'Orbitron', sans-serif;
+            color: #00f2ff;
+            font-size: 24px;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            position: relative;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #00f2ff;
+            font-weight: 600;
+            transition: 0.3s;
+            padding: 8px 15px;
+            border-radius: 5px;
+        }
+        .nav-links a:hover {
+            background: rgba(0, 242, 255, 0.2);
+        }
+        
+        /* Dropdown Menu */
+        .dropdown {
+            position: relative;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background: rgba(0, 0, 50, 0.9);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+            min-width: 160px;
+            top: 40px;
+            left: 0;
+        }
+        .dropdown-content a {
+            display: block;
+            padding: 10px;
+            color: #00f2ff;
+            text-decoration: none;
+        }
+        .dropdown-content a:hover {
+            background: rgba(0, 242, 255, 0.2);
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        /* About Us Section */
+        .about {
+            padding: 80px 20px;
+            text-align: center;
+            background: rgba(0, 0, 50, 0.8);
+            margin-top: 80px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .about h2 {
+            color: #00f2ff;
+            font-family: 'Orbitron', sans-serif;
+        }
+        .about p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        
+        /* Program Grid */
         .program-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -33,6 +115,9 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
             cursor: pointer;
+            color: #000;
+            text-decoration: none;
+            font-weight: 600;
         }
         .program-card:hover {
             transform: scale(1.05);
@@ -40,44 +125,31 @@
     </style>
 </head>
 <body>
-    <header class="sticky-header">
+    <header class="navbar">
         <h1>LABGENIE</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#programs">Programs</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li class="dropdown">
+                <a href="#features">Features ▼</a>
+                <div class="dropdown-content">
+                    <a href="DVP_Final.pdf" download>Downloadable PDF</a>
+                    <a href="#programs">Program Code</a>
+                    <a href="viva questions and solutions.pdf" download>Viva Questions & Solutions</a>
+                </div>
+            </li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#about">About Us</a></li>
+        </ul>
     </header>
-
+    
     <section id="home" class="hero">
-        <h2>Your Personal Guide to Digital Signal Processing!</h2>
-        <p>Unlock powerful resources, programs, and expert guidance to excel in your DVP Lab.</p>
-        <a href="#features" class="cta-btn">Explore Now</a>
+        <h2>Welcome to LabGenie</h2>
+        <p>Your Personal Guide to Digital Signal Processing!</p>
     </section>
-
-    <section id="features" class="fade-in">
-        <h2>Key Features</h2>
-        <div class="feature-cards">
-            <div class="card">📄 <a href="DVP_Final.pdf" download>Downloadable PDF</a></div>
-            <div class="card">💻 <a href="#programs">Program Code</a></div>
-            <div class="card">❓ <a href="viva questions and solutions.pdf" download>Viva Questions & Solutions</a></div>
-        </div>
-    </section>
-
+    
     <section id="programs">
         <h2>Featured Programs</h2>
         <div class="program-grid">
-            <a href="Program 1a.html" class="program-card">Program 1A</a>
-            <a href="Program 1b.html" class="program-card">Program 1B</a>
-            <a href="Program 2a.html" class="program-card">Program 2A</a>
-            <a href="Program 2b.html" class="program-card">Program 2B</a>
-            <a href="Program 3a.html" class="program-card">Program 3A</a>
-            <a href="Program 3b.html" class="program-card">Program 3B</a>
-            <a href="Program 4a.html" class="program-card">Program 4A</a>
-            <a href="Program 4b.html" class="program-card">Program 4B</a>
             <a href="Program 5a.html" class="program-card">Program 5A</a>
             <a href="Program 5b.html" class="program-card">Program 5B</a>
             <a href="Program 6a.html" class="program-card">Program 6A</a>
@@ -90,12 +162,7 @@
             <a href="Program 10b.html" class="program-card">Program 10B</a>
         </div>
     </section>
-
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Have questions? Reach out to us at <a href="mailto:support@labgenie.com">support@labgenie.com</a></p>
-    </section>
-
+    
     <footer>
         <p>&copy; 2025 LABGENIE. All rights reserved.</p>
     </footer>
