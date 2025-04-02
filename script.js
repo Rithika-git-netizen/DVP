@@ -1,3 +1,6 @@
+I've removed the typing animation section from your JavaScript code. Here is the updated code:
+
+
 // ========== Smooth Scroll for Navigation ==========
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
@@ -8,29 +11,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
-
-// ========== Typing Animation for Hero Section ==========
-const textElement = document.getElementById("typing-text");
-const textArray = ["Your DVP Lab Guide", "Your IoT Lab Partner", "Your Digital Signal Expert"];
-let index = 0;
-let charIndex = 0;
-
-function typeEffect() {
-  if (charIndex < textArray[index].length) {
-    textElement.textContent += textArray[index].charAt(charIndex);
-    charIndex++;
-    setTimeout(typeEffect, 100);
-  } else {
-    setTimeout(() => {
-      textElement.textContent = "";
-      charIndex = 0;
-      index = (index + 1) % textArray.length;
-      typeEffect();
-    }, 2000);
-  }
-}
-
-document.addEventListener("DOMContentLoaded", typeEffect);
 
 // ========== Sticky Header Effect ==========
 window.addEventListener("scroll", function () {
@@ -60,7 +40,7 @@ backToTopBtn.addEventListener('click', () => {
 const programItems = document.querySelectorAll('.program-item');
 const programModal = document.getElementById('programModal');
 const programModalText = document.getElementById('programModalText');
-const closeProgramModal = document.querySelector('.close-program-modal');
+const closeProgramModal = document.getElementById('close-program-modal');
 
 programItems.forEach(item => {
   item.addEventListener('click', (e) => {
@@ -76,25 +56,23 @@ closeProgramModal.addEventListener('click', () => {
 });
 
 // ========== About Us Modal ==========
-const aboutUsModal = document.getElementById("aboutUsModal");
-const aboutUsBtn = document.getElementById("aboutUsBtn");
-const closeAboutUsModal = document.getElementsByClassName("close")[0];
+const aboutModal = document.getElementById("aboutModal");
+const aboutBtn = document.getElementById("about-btn");
+const closeAboutModal = document.getElementById('close-about-modal');
 
-aboutUsBtn.onclick = function () {
-  aboutUsModal.style.display = "block";
+aboutBtn.onclick = function () {
+  aboutModal.style.display = "block";
 };
 
-closeAboutUsModal.onclick = function () {
-  aboutUsModal.style.display = "none";
+closeAboutModal.onclick = function () {
+  aboutModal.style.display = "none";
 };
 
 window.onclick = function (event) {
-  if (event.target == aboutUsModal) {
-    aboutUsModal.style.display = "none";
+  if (event.target == aboutModal) {
+    aboutModal.style.display = "none";
+  }
+  if (event.target == programModal) {
+    programModal.classList.remove('active');
   }
 };
-
-// ========== Scroll to About Section ==========
-document.getElementById("aboutUsBtn").addEventListener("click", function () {
-  document.getElementById("about").scrollIntoView({ behavior: "smooth" });
-});
