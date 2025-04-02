@@ -11,6 +11,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            background: url('backgrounds.jpg') no-repeat center center/cover;
             color: #ffffff;
             font-family: 'Poppins', sans-serif;
             overflow-x: hidden;
@@ -21,16 +22,18 @@
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(0, 0, 0, 0.9);
+            background: rgba(0, 0, 50, 0.9);
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 20px;
+            padding: 15px 20px;
             z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
         .navbar h1 {
             font-family: 'Orbitron', sans-serif;
             color: #00f2ff;
+            font-size: 24px;
         }
         .nav-links {
             list-style: none;
@@ -39,24 +42,28 @@
         }
         .nav-links a {
             text-decoration: none;
-            color: white;
-            padding: 10px;
+            color: #00f2ff;
+            font-weight: 600;
             transition: 0.3s;
+            padding: 8px 15px;
+            border-radius: 5px;
         }
         .nav-links a:hover {
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 5px;
+            background: rgba(0, 242, 255, 0.2);
         }
         
         /* About Us Section */
         .about {
-            padding: 100px 20px;
+            padding: 80px 20px;
             text-align: center;
-            background: rgba(0, 0, 0, 0.7);
+            background: rgba(0, 0, 50, 0.8);
             margin-top: 80px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
         .about h2 {
             color: #00f2ff;
+            font-family: 'Orbitron', sans-serif;
         }
         .about p {
             max-width: 800px;
