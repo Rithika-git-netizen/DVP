@@ -9,36 +9,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    console.log("Script Loaded");
-    
-    const aboutModal = document.getElementById("aboutModal");
-    const aboutBtn = document.querySelector(".about-btn");
-    const closeAboutModal = document.querySelector(".close-btn");
-
-    console.log(aboutModal, aboutBtn, closeAboutModal); // Debugging
-
-    function openModal() {
-        console.log("Opening Modal");
-        aboutModal.style.display = "block";
-    }
-
-    function closeModal() {
-        console.log("Closing Modal");
-        aboutModal.style.display = "none";
-    }
-
-    if (aboutBtn) aboutBtn.addEventListener("click", openModal);
-    if (closeAboutModal) closeAboutModal.addEventListener("click", closeModal);
-
-    window.addEventListener("click", function (event) {
-        if (event.target === aboutModal) {
-            closeModal();
-        }
-    });
-});
-
-
 // ========== Sticky Header Effect ==========
 window.addEventListener("scroll", function () {
   const header = document.querySelector("header");
