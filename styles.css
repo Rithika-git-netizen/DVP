@@ -1,302 +1,183 @@
-/* ========== General Styles ========== */
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background: linear-gradient(135deg, #9d2585, #922db7),
-                url('backgrounds.jpg') no-repeat center center/cover;
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400; 
-    line-height: 1.6;
-    color: #e0e0e0;
-    height: 100vh;
-    overflow-x: hidden;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LABGENIE - Your DVP Lab Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@400;600&display=swap">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: url('backgrounds.jpg') no-repeat center center/cover;
+            height: 100vh;
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400; 
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .college-logo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .program-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            text-align: center;
+        }
+        .program-card {
+            background: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        .program-card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header class="sticky-header">
+        <div class="header-content">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXUEylxlTVLvQ_NjNoAHKKzDxEw7KL-c1jOg&s">
+            <div class="college-name">
+                <h1>K. S. SCHOOL OF ENGINEERING AND MANAGEMENT</h1>
+                <p>Department of Computer Science and Business Systems</p>
+            </div>
+            <img src="WhatsApp Image 2025-04-02 at 1.17.11 PM.jpeg">
+            
+        </div>
+        <nav>
+            <ul>
+               <li><a href="https://plum-ways-870316.framer.app/" target="_blank">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#About US">About us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-h1, h2 {
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #ffffff;
-}
+ <section id="home" class="hero">
+        <h2>Welcome to LABGENIE</h2>
+        <p>Your Personal Guide to Data Visualization with Python!</p>
+        <a>Explore Now</a>
+    </section>
 
-h1 {
-    background: linear-gradient(90deg, #fefbff, hsl(316, 83%, 39%));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+    <section id="features" class="fade-in">
+        <h2>Key Features</h2>
+        <div class="feature-cards">
+            <div class="card">📄 <a href="DVP_Final.pdf" download>Downloadable PDF</a></div>
+            <div class="card">💻 <a href="#programs">Program Code</a></div>
+            <div class="card">❓ <a href="viva questions and solutions.pdf" download>Viva Questions & Solutions</a></div>
+        </div>
+    </section>
 
-/* ========== Logo ========== */
-#logo {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 2.5rem;
-    color: #ff00ff;
-    text-shadow: 0 0 15px #00c6ff, 0 0 30px #0072ff;
-    animation: glow 2s infinite alternate;
-}
+    <section id="programs">
+        <h2>Featured Programs</h2>
+        <div class="program-grid">
+            <a href="Program 1a.html" class="program-card">Program 1A</a>
+            <a href="Program 1b.html" class="program-card">Program 1B</a>
+            <a href="Program 2a.html" class="program-card">Program 2A</a>
+            <a href="Program 2b.html" class="program-card">Program 2B</a>
+            <a href="Program 3a.html" class="program-card">Program 3A</a>
+            <a href="Program 3b.html" class="program-card">Program 3B</a>
+            <a href="Program 4a.html" class="program-card">Program 4A</a>
+            <a href="Program 4b.html" class="program-card">Program 4B</a>
+            <a href="Program 5a.html" class="program-card">Program 5A</a>
+            <a href="Program 5b.html" class="program-card">Program 5B</a>
+            <a href="Program 6a.html" class="program-card">Program 6A</a>
+            <a href="Program 6b.html" class="program-card">Program 6B</a>
+            <a href="Program 7.html" class="program-card">Program 7</a>
+            <a href="Program 8a.html" class="program-card">Program 8A</a>
+            <a href="Program 8b.html" class="program-card">Program 8B</a>
+            <a href="Program 9.html" class="program-card">Program 9</a>
+            <a href="Program 10a.html" class="program-card">Program 10A</a>
+            <a href="Program 10b.html" class="program-card">Program 10B</a>
+        </div>
+    </section>
+    <section id="about" class="fade-in">
+    <h2>About Us</h2>
+    <button class="about-btn" onclick="openModal()">Meet Our Team</button>
+    <p>LabGenie is designed to be your personal guide for mastering Data Visualization with Python (DVP). Our mission is to simplify learning and provide a structured way to explore and practice DVP programs.</p>
+    <p>We are a dedicated team of students from KSSEM's Computer Science and Business Systems department, committed to making technical education more accessible and engaging.</p>
 
-@keyframes glow {
-    from { text-shadow: 0 0 10px #00c6ff, 0 0 20px #0072ff; }
-    to { text-shadow: 0 0 20px #00ffcc, 0 0 40px #00c6ff; }
-}
+    <!-- Modal Structure -->
+    <div id="aboutModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2>Our Team</h2>
+            
+            <section id="about-us">
+                <div class="about-us-container">
+                    <div class="contact-card">
+                        <img src="ajith.jpeg" alt="Ajith G">
+                        <h3>Ajith G</h3>
+                        <p>1KG23CB002</p>
+                    </div>
+                    <div class="contact-card">
+                        <img src="Khushi (2).jpeg" alt="Khushi S">
+                        <h3>Khushi S</h3>
+                        <p>1KG23CB022</p>
+                    </div>
+                    <div class="contact-card">
+                        <img src="manoj.jpeg" alt="Manoj">
+                        <h3>Manoj</h3>
+                        <p>1KG23CB029</p>
+                    </div>
+                    <div class="contact-card">
+                        <img src="pavan.jpeg" alt="Pavan MJ">
+                        <h3>Pavan MJ</h3>
+                        <p>1KG23CB033</p>
+                    </div>
+                    <div class="contact-card">
+                        <img src="Rithika.jpeg" alt="Rithika A">
+                        <h3>Rithika A</h3>
+                        <p>1KG23CB042</p>
+                    </div>
+                    <div class="contact-card">
+                        <img src="vaishnavi.jpeg" alt="Vaishnavi S">
+                        <h3>Vaishnavi S</h3>
+                        <p>1KG23CB057</p>
+                    </div>
+                </div>
+                <p class="thank-you">We appreciate your support and hope LabGenie enhances your learning experience!</p>
+            </section>
+        </div>
+    </div>
+</section>
+   
 
-/* ========== Navigation ========== */
-header {
-    background: #2a0d1ea6;
-    padding: 15px 0;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(72, 43, 43, 0.938);
-}
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to us at <a href="mailto:support@labgenie.com">support@labgenie.com</a></p>
+    </section>
 
-header .header-content img {
-    width: 130px;
-    height: 110px;
-}
-
-.sticky-header.scrolled {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #682186;
-    transition: background 0.3s ease-in-out;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #ea47f3;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #ffffffbb;
-}
-
-/* ========== Hero Section ========== */
-.hero {
-    text-align: center;
-    padding: 100px 20px;
-    background: #190819;
-    animation: fadeIn 1.5s ease-in-out;
-}
-
-.cta-btn {
-    font-family: 'Rajdhani', sans-serif;
-    background-color: #d909f4;
-    color: #ffffff;
-    padding: 12px 24px;
-    border: 2px solid #b4f306;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.cta-btn:hover {
-    background-color: #00ffcc;
-    color: #10172a;
-    transform: scale(1.1);
-    box-shadow: 0 0 15px #00ffcc;
-}
-
-/* ========== About Us Button ========== */
-.about-btn {
-    background: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background 0.3s ease-in-out;
-}
-
-.about-btn:hover {
-    background: #0056b3;
-}
-
-/* About Us Section */
-.about-us-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border: 2px solid #ddd;
-    min-height: 200px;
-    text-align: center;
-    color: #000; /* Ensure text is visible */
-}
-.modal {
-    display: none; /* Initially hidden */
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-.modal-content {
-    background-color: white;
-    padding: 20px;
-    width: 50%;
-    margin: 10% auto;
-}
-.close-btn {
-    cursor: pointer;
-}
-
-/* Contact Card */
-.contact-card {
-    width: 200px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.3s ease-in-out;
-}
-
-/* Hover Effect */
-.contact-card:hover {
-    transform: scale(1.05);
-    background-color: #e0e0e0;
-}
-
-/* Image Styling */
-.contact-card img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    object-fit: cover;
-    border: 2px solid #000; /* Add a border for better contrast */
-}
-
-/* Name and USN Styling */
-.contact-card h3 {
-    font-size: 1.2rem;
-    color: #333; /* Dark color for better visibility */
-    margin: 5px 0;
-}
-
-.contact-card p {
-    font-size: 1rem;
-    color: #555; /* Slightly lighter than name */
-    margin: 0;
-}
-
-/* Thank You Note */
-.thank-you {
-    font-size: 1.1rem;
-    color: #333;
-    margin-top: 20px;
-}
-
-/* Close Button */
-.close-btn {
-    background: #FF6347;
-    color: #fff;
-    border: none;
-    padding: 8px 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 14px;
-    margin: 10px;
-    transition: background 0.3s ease;
-}
-
-.close-btn:hover {
-    background: #D43F00;
-}
-
-
-/* ========== Features ========== */
-.feature-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 40px 20px;
-}
-
-.card {
-    background: #110515;
-    border-radius: 12px;
-    padding: 20px;
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    background: #e029f5;
-}
-
-/* ========== Footer ========== */
-footer {
-    background: #4a1a48;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 20px;
-}
-
-/* ========== Modal Styles (Cleaned) ========== */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.5);
-}
-
-.modal-content {
-    background-color: #fff;
-    color: #000;
-    margin: 15% auto;
-    padding: 20px;
-    border-radius: 10px;
-    width: 50%;
-    text-align: center;
-    position: relative;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Close Button */
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 20px;
-    cursor: pointer;
-    color: #FF6347;
-}
-
-/* ========== Fade-in Animations ========== */
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeIn 1.5s ease-out forwards;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
+    <footer>
+        <p>&copy; 2025 LABGENIE. All rights reserved.</p>
+    </footer>
+</body>
+</html>
