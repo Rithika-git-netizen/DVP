@@ -120,15 +120,22 @@
        
 <section>
      <section id="about" class="fade-in">
-    <h2>About Us</h2>
-    <p> Ajith G     1KG23CB002<br>
-        Khushi S    1KG23CB022<br>
-        Manoj       1KG23CB029<br>
-        Pavan MJ    1KG23CB033<br>
-        Rithika A   1KG23CB042<br>
-        Vaishnavi S 1KG23CB042<br>
-    </p>
-    <button class="about-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Back to Top</button>
+        <h2>About Us</h2>
+        <button class="about-btn" onclick="openModal()">View Team</button>
+    </section>
+
+    <div id="aboutModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2>Our Team</h2>
+            <p> Ajith G     1KG23CB002<br>
+                Khushi S    1KG23CB022<br>
+                Manoj       1KG23CB029<br>
+                Pavan MJ    1KG23CB033<br>
+                Rithika A   1KG23CB042<br>
+                Vaishnavi S 1KG23CB042<br></p>
+        </div>
+    </div>
 </section>
 <section>
     <section id="contact">
