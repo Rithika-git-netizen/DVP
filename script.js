@@ -51,26 +51,24 @@ programItems.forEach(item => {
 closeProgramModal.addEventListener('click', () => {
   programModal.classList.remove('active');
 });
-
-// ========== About Us Modal ==========
+// About Us Modal Functionality
 const aboutModal = document.getElementById("aboutModal");
 const aboutBtn = document.getElementById("about-btn");
-const closeAboutModal = document.getElementsByClassName("close-btn")[0];
+const closeAboutModal = document.querySelector(".close-btn");
 
+// Open the modal when the button is clicked
 aboutBtn.addEventListener("click", function () {
-  aboutModal.style.display = "block";
+    aboutModal.style.display = "block";
 });
 
+// Close the modal when the close button (×) is clicked
 closeAboutModal.addEventListener("click", function () {
-  aboutModal.style.display = "none";
+    aboutModal.style.display = "none";
 });
 
-// Close Modal when Clicking Outside
+// Close the modal when clicking outside the modal content
 window.addEventListener("click", function (event) {
-  if (event.target === aboutModal) {
-    aboutModal.style.display = "none";
-  }
-  if (event.target === programModal) {
-    programModal.style.display = "none";
-  }
+    if (event.target === aboutModal) {
+        aboutModal.style.display = "none";
+    }
 });
