@@ -4,46 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LABGENIE - Your DVP Lab Guide</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@400;600&display=swap">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: url('backgrounds.jpg') no-repeat center center/cover;
+            height: 100vh;
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400; 
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        .program-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            text-align: center;
+        }
+        .program-card {
+            background: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        .program-card:hover {
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="college-logo">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPwVufwpl8jpAUUkoKHDZPoINL16X3wpac0A&s" alt="kssem.png">
-                </div>
-                <div class="college-name">
-                    <h1>K. S. SCHOOL OF ENGINEERING AND MANAGEMENT</h1>
-                    <div class="site-title">Department of Computer Science and Business Systems</div>
-                </div>
-            </div>
-            <h1><b>DVP Lab Programs</b></h1>
-            <h1>Welcome to the Program Page</h1>
-        </div>
+    <header class="sticky-header">
+        <h1>LABGENIE</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    
-    <section id="programs">
-        <a href="Program 1a.html">Program 1A</a>
-        <a href="Program 1b.html">Program 1B</a>
-        <a href="Program 2a.html">Program 2A</a>
-        <a href="Program 2b.html">Program 2B</a>
-        <a href="Program 3a.html">Program 3A</a>
-        <a href="Program 3b.html">Program 3B</a>
-        <a href="Program 4a.html">Program 4A</a>
-        <a href="Program 4b.html">Program 4B</a>
-        <a href="Program 5a.html">Program 5A</a>
-        <a href="Program 5b.html">Program 5B</a>
-        <a href="Program 6a.html">Program 6A</a>
-        <a href="Program 6b.html">Program 6B</a>
-        <a href="Program 7.html">Program 7</a>
-        <a href="Program 8a.html">Program 8A</a>
-        <a href="Program 8b.html">Program 8B</a>
-        <a href="Program 9.html">Program 9</a>
-        <a href="Program 10a.html">Program 10A</a>
-        <a href="Program 10b.html">Program 10B</a>
+
+    <section id="home" class="hero">
+        <h2>Your Personal Guide to Digital Signal Processing!</h2>
+        <p>Unlock powerful resources, programs, and expert guidance to excel in your DVP Lab.</p>
+        <a href="#features" class="cta-btn">Explore Now</a>
     </section>
-    
+
+    <section id="features" class="fade-in">
+        <h2>Key Features</h2>
+        <div class="feature-cards">
+            <div class="card">📄 <a href="DVP_Final.pdf" download>Downloadable PDF</a></div>
+            <div class="card">💻 <a href="#programs">Program Code</a></div>
+            <div class="card">❓ <a href="viva questions and solutions.pdf" download>Viva Questions & Solutions</a></div>
+        </div>
+    </section>
+
+    <section id="programs">
+        <h2>Featured Programs</h2>
+        <div class="program-grid">
+            <a href="Program 1a.html" class="program-card">Program 1A</a>
+            <a href="Program 1b.html" class="program-card">Program 1B</a>
+            <a href="Program 2a.html" class="program-card">Program 2A</a>
+            <a href="Program 2b.html" class="program-card">Program 2B</a>
+            <a href="Program 3a.html" class="program-card">Program 3A</a>
+            <a href="Program 3b.html" class="program-card">Program 3B</a>
+            <a href="Program 4a.html" class="program-card">Program 4A</a>
+            <a href="Program 4b.html" class="program-card">Program 4B</a>
+            <a href="Program 5a.html" class="program-card">Program 5A</a>
+            <a href="Program 5b.html" class="program-card">Program 5B</a>
+            <a href="Program 6a.html" class="program-card">Program 6A</a>
+            <a href="Program 6b.html" class="program-card">Program 6B</a>
+            <a href="Program 7.html" class="program-card">Program 7</a>
+            <a href="Program 8a.html" class="program-card">Program 8A</a>
+            <a href="Program 8b.html" class="program-card">Program 8B</a>
+            <a href="Program 9.html" class="program-card">Program 9</a>
+            <a href="Program 10a.html" class="program-card">Program 10A</a>
+            <a href="Program 10b.html" class="program-card">Program 10B</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to us at <a href="mailto:support@labgenie.com">support@labgenie.com</a></p>
+    </section>
+
     <footer>
         <p>&copy; 2025 LABGENIE. All rights reserved.</p>
     </footer>
