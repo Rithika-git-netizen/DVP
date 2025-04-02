@@ -1,14 +1,33 @@
+/* ========== General Styles ========== */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #9d2585, #922db7);
+                url('backgrounds.jpg') no-repeat center center/cover;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400; 
+    line-height: 1.6;
+    color: #e0e0e0;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
 h1, h2 {
     font-family: 'Orbitron', sans-serif;
-    font-weight: 700;  /* Bold effect */
-    text-transform: uppercase; /* Techy look */
-    color: #ffffff; /* White text for better contrast */
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
 }
+
 h1 {
     background: linear-gradient(90deg, #fefbff, hsl(316, 83%, 39%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+/* ========== Logo ========== */
 #logo {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 4rem;
@@ -18,41 +37,11 @@ h1 {
 }
 
 @keyframes glow {
-    from {
-        text-shadow: 0 0 10px #00c6ff, 0 0 20px #0072ff;
-    }
-    to {
-        text-shadow: 0 0 20px #00ffcc, 0 0 40px #00c6ff;
-    }
+    from { text-shadow: 0 0 10px #00c6ff, 0 0 20px #0072ff; }
+    to { text-shadow: 0 0 20px #00ffcc, 0 0 40px #00c6ff; }
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background: linear-gradient(135deg, #9d2585, #922db7);
-                url('backgrounds.jpg') no-repeat center center/cover;
-    color: #fff;
-    font-family: Arial, sans-serif;
- 
-    height: 100vh; /* Full viewport height */
-    color: #ffffff; /* Ensures text remains readable */
-    overflow-x: hidden; /* Prevents horizontal scroll */
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400; 
-    line-height: 1.6; /* Improves readability */
-    color: #e0e0e0; /* Soft text for a smoother feel */
-}
-
-/* Code Snippets (Courier New) */
-code, pre {
-    font-family: 'Courier New', monospace;
-    background-color: #10172a;  /* Dark code block background */
-    color: #00ffcc;             /* Bright code text */
-    padding: 5px 10px;
-    border-radius: 8px;
-}
-    
+/* ========== Navigation ========== */
 header {
     background: #2a0d1ea6;
     padding: 15px 0;
@@ -87,6 +76,7 @@ nav a:hover {
     color: #ffffffbb;
 }
 
+/* ========== Hero Section ========== */
 .hero {
     text-align: center;
     padding: 100px 20px;
@@ -103,32 +93,32 @@ nav a:hover {
     border-radius: 8px;
     transition: all 0.3s ease;
     cursor: pointer;
-    
 }
 
 .cta-btn:hover {
     background-color: #00ffcc;
     color: #10172a;
-    transform: scale(1.1); /* Slight zoom effect */
+    transform: scale(1.1);
     box-shadow: 0 0 15px #00ffcc;
 }
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeIn 1.5s ease-out forwards;
+
+/* ========== About Us Button ========== */
+.about-btn {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s ease-in-out;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.about-btn:hover {
+    background: #0056b3;
 }
 
+/* ========== Features ========== */
 .feature-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -149,6 +139,16 @@ nav a:hover {
     background: #e029f5;
 }
 
+/* ========== Code Snippets ========== */
+code, pre {
+    font-family: 'Courier New', monospace;
+    background-color: #10172a;
+    color: #00ffcc;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+/* ========== Footer ========== */
 footer {
     background: #4a1a48;
     text-align: center;
@@ -156,8 +156,14 @@ footer {
     margin-top: 20px;
 }
 
+/* ========== Fade-in Animations ========== */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(-20px); }
     to { opacity: 1; transform: translateY(0); }
 }
-    
