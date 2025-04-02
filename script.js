@@ -1,4 +1,3 @@
-
 // ========== Smooth Scroll for Navigation ==========
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
@@ -53,45 +52,25 @@ closeProgramModal.addEventListener('click', () => {
   programModal.classList.remove('active');
 });
 
-// About Us Modal
-    const aboutModal = document.getElementById("aboutModal");
-    const aboutBtn = document.getElementById("about-btn");
-    const closeAboutModal = document.getElementsByClassName("close-btn")[0];
-    
-    aboutBtn.onclick = function () {
-      aboutModal.style.display = "block";
-    };
-    
-    closeAboutModal.onclick = function () {
-      aboutModal.style.display = "none";
-    };
-    
-    window.onclick = function (event) {
-      if (event.target == aboutModal) {
-        aboutModal.style.display = "none";
-      }
-    };
-    
-    // Program Modal
-    const programModal = document.getElementById("programModal");
-    const programItems = document.querySelectorAll('.program-item');
-    const closeProgramModal = document.getElementsByClassName("close-btn")[1];
-    
-    programItems.forEach(item => {
-      item.addEventListener('click', (e) => {
-        e.preventDefault();
-        const programDetails = item.getAttribute('data-details');
-        document.getElementById('programModalText').innerHTML = programDetails;
-        programModal.style.display = "block";
-      });
-    });
-    
-    closeProgramModal.onclick = function () {
-      programModal.style.display = "none";
-    };
-    
-    window.onclick = function (event) {
-      if (event.target == programModal) {
-        programModal.style.display = "none";
-      }
-    };
+// ========== About Us Modal ==========
+const aboutModal = document.getElementById("aboutModal");
+const aboutBtn = document.getElementById("about-btn");
+const closeAboutModal = document.getElementsByClassName("close-btn")[0];
+
+aboutBtn.addEventListener("click", function () {
+  aboutModal.style.display = "block";
+});
+
+closeAboutModal.addEventListener("click", function () {
+  aboutModal.style.display = "none";
+});
+
+// Close Modal when Clicking Outside
+window.addEventListener("click", function (event) {
+  if (event.target === aboutModal) {
+    aboutModal.style.display = "none";
+  }
+  if (event.target === programModal) {
+    programModal.style.display = "none";
+  }
+});
