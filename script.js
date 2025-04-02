@@ -8,6 +8,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
 document.addEventListener("DOMContentLoaded", function () {
     const aboutModal = document.getElementById("aboutModal");
     const aboutBtn = document.querySelector(".about-btn");
@@ -34,6 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
 
 
 // ========== Sticky Header Effect ==========
