@@ -76,3 +76,8 @@ programItems.forEach(item => {
 
 closeModal.addEventListener('click', () => {
     modal.classList
+document.getElementById("aboutUsBtn").addEventListener("click", function () {
+    document.getElementById("about").scrollIntoView({
+        behavior: "smooth"
+    });
+});
