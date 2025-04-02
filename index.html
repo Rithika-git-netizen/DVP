@@ -72,7 +72,7 @@
         </div>
         <nav>
             <ul>
-               <li><a href="https://plum-ways-870316.framer.app/" target="_blank">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#features">Features</a></li>
                 <li><a href="#programs">Programs</a></li>
                 <li><a href="#About US">About us</a></li>
@@ -84,7 +84,7 @@
  <section id="home" class="hero">
         <h2>Welcome to LABGENIE</h2>
         <p>Your Personal Guide to Data Visualization with Python!</p>
-        <a>Explore Now</a>
+        <a href="https://plum-ways-870316.framer.app/" class="cta-btn" target="_blank">Explore Now</a>
     </section>
 
     <section id="features" class="fade-in">
@@ -119,57 +119,64 @@
             <a href="Program 10b.html" class="program-card">Program 10B</a>
         </div>
     </section>
-   <!-- Button to Open About Us Modal -->
-<button id="about-btn">Meet Our Team</button>
+       
+<section id="about" class="fade-in">
+        <h2>About Us</h2>
+        <p>LabGenie is designed to be your personal guide for mastering Data Visualization with Python (DVP). Our mission is to simplify learning and provide a structured way to explore and practice DVP programs.</p>
+        <p>We are a dedicated team of students from KSSEM's Computer Science and Business Systems department, committed to making technical education more accessible and engaging.</p>
+        <button class="about-btn" onclick="openModal()">Meet Our Team</button>
+    </section>
 
-<!-- About Us Modal -->
-<div id="aboutModal" class="modal" style="display: none;">
-    <div class="modal-content">
-        <!-- Close Button -->
-        <span class="close-btn">&times;</span>
-
-        <!-- Modal Content -->
-        <h2>Our Team</h2>
-        <section id="about-us">
-            <div class="about-us-container">
-                <div class="contact-card">
-                    <img src="ajith.jpeg" alt="Ajith G">
-                    <h3>Ajith G</h3>
-                    <p>1KG23CB002</p>
-                </div>
-                <div class="contact-card">
-                    <img src="Khushi (2).jpeg" alt="Khushi S">
-                    <h3>Khushi S</h3>
-                    <p>1KG23CB022</p>
-                </div>
-                <div class="contact-card">
-                    <img src="manoj.jpeg" alt="Manoj">
-                    <h3>Manoj</h3>
-                    <p>1KG23CB029</p>
-                </div>
-                <div class="contact-card">
-                    <img src="pavan.jpeg" alt="Pavan MJ">
-                    <h3>Pavan MJ</h3>
-                    <p>1KG23CB033</p>
-                </div>
-                <div class="contact-card">
-                    <img src="Rithika.jpeg" alt="Rithika A">
-                    <h3>Rithika A</h3>
-                    <p>1KG23CB042</p>
-                </div>
-                <div class="contact-card">
-                    <img src="vaishnavi.jpeg" alt="Vaishnavi S">
-                    <h3>Vaishnavi S</h3>
-                    <p>1KG23CB057</p>
-                </div>
-            </div>
-            <p class="thank-you">We appreciate your support and hope LabGenie enhances your learning experience!</p>
-        </section>
+    <div id="aboutModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2>Our Team</h2>
+            <section id="about-us">
+    <h2>About Us</h2>
+   <section id="about-us">
+    <h2>About Us</h2>
+    <div class="about-us-container">
+        <div class="contact-card">
+            <img src="ajith.jpeg" alt="Ajith G">
+            <h3>Ajith G</h3>
+            <p>1KG23CB002</p>
+        </div>
+        <div class="contact-card">
+            <img src="Khushi (2).jpeg" alt="Khushi S">
+            <h3>Khushi S</h3>
+            <p>1KG23CB022</p>
+        </div>
+        <div class="contact-card">
+            <img src="manoj.jpeg" alt="Manoj">
+            <h3>Manoj</h3>
+            <p>1KG23CB029</p>
+        </div>
+        <div class="contact-card">
+            <img src="pavan.jpeg" alt="Pavan MJ">
+            <h3>Pavan MJ</h3>
+            <p>1KG23CB033</p>
+        </div>
+        <div class="contact-card">
+            <img src="Rithika.jpeg" alt="Rithika A">
+            <h3>Rithika A</h3>
+            <p>1KG23CB042</p>
+        </div>
+        <div class="contact-card">
+            <img src="vaishnavi.jpeg" alt="Vaishnavi S">
+            <h3>Vaishnavi S</h3>
+            <p>1KG23CB057</p>
+        </div>
     </div>
-</div>
+    <p class="thank-you">We appreciate your support and hope LabGenie enhances your learning experience!</p>
+</section>
 
+        </div>
+    </div>
+    <p class="thank-you">We appreciate your support and hope LabGenie enhances your learning experience!</p>
+</section>
 
-   
+        </div>
+    </div>
 
     <section id="contact">
         <h2>Contact Us</h2>
