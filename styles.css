@@ -54,7 +54,7 @@ header {
 /* ========== Logo Image ========== */
 header .header-content img {
     width: 130px; /* Reduced width */
-    height: auto;
+    height: 110px;
 }
 
 .sticky-header.scrolled {
