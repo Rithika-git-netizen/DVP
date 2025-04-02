@@ -62,17 +62,17 @@ backToTopBtn.addEventListener('click', () => {
 // ========== Modal Pop-Ups for Programs ==========
 const programItems = document.querySelectorAll('.program-item');
 const modal = document.getElementById('programModal');
-const modalContent = document.querySelector('.modal-content');
+const modalText = document.getElementById('modalText');
 const closeModal = document.querySelector('.close-modal');
 
 programItems.forEach(item => {
-    item.addEventListener('click', () => {
+    item.addEventListener('click', (e) => {
+        e.preventDefault();
         const programDetails = item.getAttribute('data-details');
-        modalContent.innerHTML = `<p>${programDetails}</p>`;
+        modalText.innerHTML = programDetails;
         modal.classList.add('active');
     });
 });
 
 closeModal.addEventListener('click', () => {
-    modal.classList.remove('active');
-});
+    modal.classList
