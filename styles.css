@@ -136,6 +136,25 @@ nav a:hover {
     text-align: center;
     color: #000; /* Ensure text is visible */
 }
+.modal {
+    display: none; /* Initially hidden */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    width: 50%;
+    margin: 10% auto;
+}
+.close-btn {
+    cursor: pointer;
+}
 
 /* Contact Card */
 .contact-card {
