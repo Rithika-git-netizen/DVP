@@ -74,7 +74,19 @@ programItems.forEach(item => {
     });
 });
 
-closeModal.addEventListener('click', () => {
+
+function openModal() {
+            document.getElementById("aboutModal").style.display = "block";
+        }
+        function closeModal() {
+            document.getElementById("aboutModal").style.display = "none";
+        }
+        window.onclick = function(event) {
+            var modal = document.getElementById("aboutModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }closeModal.addEventListener('click', () => {
     modal.classList
 document.getElementById("aboutUsBtn").addEventListener("click", function () {
     document.getElementById("about").scrollIntoView({
