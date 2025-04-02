@@ -10,32 +10,33 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+    console.log("Script Loaded");
+    
     const aboutModal = document.getElementById("aboutModal");
     const aboutBtn = document.querySelector(".about-btn");
     const closeAboutModal = document.querySelector(".close-btn");
-    
-    // Function to open modal
+
+    console.log(aboutModal, aboutBtn, closeAboutModal); // Debugging
+
     function openModal() {
+        console.log("Opening Modal");
         aboutModal.style.display = "block";
     }
-    
-    // Function to close modal
+
     function closeModal() {
+        console.log("Closing Modal");
         aboutModal.style.display = "none";
     }
-    
-    // Event listeners
-    aboutBtn.addEventListener("click", openModal);
-    closeAboutModal.addEventListener("click", closeModal);
-    
-    // Close modal when clicking outside of it
+
+    if (aboutBtn) aboutBtn.addEventListener("click", openModal);
+    if (closeAboutModal) closeAboutModal.addEventListener("click", closeModal);
+
     window.addEventListener("click", function (event) {
         if (event.target === aboutModal) {
             closeModal();
         }
     });
 });
-
 
 
 // ========== Sticky Header Effect ==========
