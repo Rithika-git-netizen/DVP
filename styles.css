@@ -144,12 +144,49 @@ nav a:hover {
 }
 
 /* ========== About Us Section ========== */
+/* Modal Styles */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #FF6347;
+}
+
+/* About Us Container */
 .about-us-container {
     display: flex;
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
-    padding: 50px 0;
+    padding: 20px 0;
     text-align: center;
 }
 
@@ -180,6 +217,14 @@ nav a:hover {
     font-size: 1em;
     margin-bottom: 10px;
     color: #555;
+}
+
+/* Thank You Message */
+.thank-you {
+    margin-top: 20px;
+    font-style: italic;
+    color: #333;
+}
 }
 
 /* ========== Features ========== */
