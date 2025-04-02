@@ -30,10 +30,12 @@ h1 {
 /* ========== Logo ========== */
 #logo {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 4rem;
+    font-size: 2.5rem; /* Reduced size */
     color: #ff00ff;
     text-shadow: 0 0 15px #00c6ff, 0 0 30px #0072ff;
     animation: glow 2s infinite alternate;
+}
+
 }
 
 @keyframes glow {
